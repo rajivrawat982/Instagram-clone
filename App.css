@@ -1,0 +1,107 @@
+.App{
+  background-color: #fafafa;
+  height: 100vh; 
+}
+
+.App__header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  /*we dont want to strecth our logo on changing size of container so to maintain same aspect ratio below css styling*/
+  object-fit: contain;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app_headerImage {
+  object-fit: contain;
+}
+
+.app_posts {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.app_postsright{
+  margin-left: 10px;
+}
+
+.sign_up {
+  display: flex;
+  flex-direction:  column;
+}
+/*------------post-------------*/
+.post{
+  max-width: 500px;
+  background-color: white;
+  border: 1px solid lightgray;
+  margin-bottom: 45px;  /*this help to create space between posts */
+}
+
+.post_image {
+  width: 100%;
+  object-fit: contain;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.post_text{
+  font-weight: normal;
+  padding: 20px;
+}
+
+.post_header{
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+.post_avatar{
+  margin-right: 10px;
+}
+
+.post_commentsBox {
+  display: flex;
+  margin-top: 10px;
+}
+
+.post_comments{
+  padding: 2px 20px;
+}
+
+.post_input{
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-top: 1px solid lightgray;
+}
+
+.post_button {
+  flex: 0.1;
+  border: none;
+  color:blue;
+  background-color: transparent;
+  border-top: 1px solid lightgray;
+}
+
+/*---------image upload------------*/
+.imageUpload {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-top: 1px solid black;
+  
+  
+}
+
+.imageupload_progress {
+  width: 100%;
+}
